@@ -24,11 +24,7 @@
 		<div
 			class="flex-auto md:flex-1 px-10 md:p-4 md:pr-10 mx-2 mb-2 md:mb-0 flex items-center justify-center md:justify-end"
 		>
-			<ul class="space-y-4 text-center md:text-right">
-				<li><a href="#about" class="text-2xl hover:underline">About</a></li>
-				<li><a href="#projects" class="text-2xl hover:underline">Projects</a></li>
-				<li><a href="#blog" class="text-2xl hover:underline">Blog</a></li>
-			</ul>
+			<p class="space-y-4 text-center md:text-right text-2xl">New Site Coming Soon!</p>
 		</div>
 	</div>
 </div>
