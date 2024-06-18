@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>WOAH</title>
+	<title>Euan Deas</title>
 </svelte:head>
 
 <div class="relative h-screen flex flex-col items-center justify-center">
