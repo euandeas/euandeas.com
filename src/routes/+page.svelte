@@ -1,6 +1,4 @@
 <script lang="ts">
-	import ThemeSwitch from '$lib/components/theme-switch.svelte';
-	import HamburgerButton from '$lib/components/hamburger-button.svelte';
 	import Header from '$lib/components/header.svelte';
 
 	let y: number = $state(0);
