@@ -1,38 +1,65 @@
-# create-svelte
+# Ideas
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+Start on main screen with main options but then when item clicked scroll down to it and collapse into header bar
 
-## Creating a project
+1 page
 
-If you're seeing this, you've probably already done this step. Congrats!
+about then projects and then blog then footer
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+nav just scrolls to correct bit
 
-# create a new project in my-app
-npm create svelte@latest my-app
+collpasing header bar
+
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Header Example</title>
+    <style>
+        /*reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  font-family: 'PT Sans', sans-serif;
+  transition: all 0.4s ease;
+  color: #fff;
+
+  font-size: 72px;
+  line-height: 108px;
+  height: 100vh;
+  background: #335C7D;
+  text-align: center;
+}
+header.sticky {
+  font-size: 24px;
+  line-height: 48px;
+  height: 48px;
+  background: #efc47D;
+  padding-left: 20px;
+}
+    </style>
+</head>
+<body>
+    <header><h1>Sticky Header</h1></header>
+	<p>Scroll down to see the header resize.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.</p>
+ <script>
+window.addEventListener('scroll', function() {
+  var belowTop = window.scrollY > 30;
+  document.querySelector('header').classList.toggle('sticky', belowTop);
+});
+</script>
+</body>
+</html>
 ```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
