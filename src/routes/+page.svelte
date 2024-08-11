@@ -40,7 +40,6 @@
 		} else if (isSticky && y <= 10) {
 			isSticky = false;
 		}
-		//isSticky = y > 10;
 	});
 </script>
 

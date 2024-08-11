@@ -26,19 +26,19 @@
 			: 'opacity-0 py-0'}"
 	>
 		<a
-			href="#about"
+			href=""
 			class="flex-1 transition-all duration-500 hover:underline {checked
 				? ''
 				: 'pointer-events-none'}" on:click={() => checked = false}>About</a
 		>
 		<a
-			href="#projects"
+			href=""
 			class="flex-1 transition-all duration-700 hover:underline {checked
 				? ''
 				: 'pointer-events-none'}" on:click={() => checked = false}>Projects</a
 		>
 		<a
-			href="#blog"
+			href=""
 			class="flex-1 transition-all duration-700 hover:underline {checked
 				? ''
 				: 'pointer-events-none'}" on:click={() => checked = false}>Blog</a
@@ -78,19 +78,19 @@
 				: 'flex-col md:justify-center md:pt-0 pt-10'}"
 		>
 			<a
-				href="#about"
+				href=""
 				class="transition-all duration-700 hover:underline {isSticky
 					? 'ml-5'
 					: 'md:ml-auto text-2xl py-2'}">About</a
 			>
 			<a
-				href="#projects"
+				href=""
 				class="transition-all duration-700 hover:underline {isSticky
 					? 'ml-5'
 					: 'md:ml-auto text-2xl py-2'}">Projects</a
 			>
 			<a
-				href="#blog"
+				href=""
 				class="transition-all duration-700 hover:underline {isSticky
 					? 'ml-5'
 					: 'md:ml-auto text-2xl py-2'}">Blog</a
