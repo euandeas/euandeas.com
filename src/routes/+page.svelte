@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Header from '$lib/components/header.svelte';
+	import ThemeSwitch from '$lib/components/theme-switch.svelte';
 
 	let y: number = $state(0);
 	let isSticky = $state(false);
