@@ -14,18 +14,20 @@
 <div class="flex bg-background justify-center">
 	<Header {isSticky} />
 
-	<div class="pt-24 max-w-[960px] w-full h-screen mx-10">
+	<div class="pt-24 max-w-[960px] w-full mx-10">
 		<h1 class="text-3xl font-semibold pb-6">Privacy... Its Important</h1>
 
 		<p class="pb-4">
-			This Privacy Policy explains how your information
-			is (or isn't) used on this website or any of my applications. In short, I don't collect, track, or sell any of your data
-			unless it's absolutely necessary for a specific feature or application. I don't like my data being collected, so why would I collect yours!
+			This Privacy Policy explains how your information is (or isn't) used on this website or any of
+			my applications. In short, I don't collect, track, or sell any of your data unless it's
+			absolutely necessary for a specific feature or application. I don't like my data being
+			collected, so why would I collect yours!
 		</p>
 
 		<h2 class="pb-2">1. No Data Collection</h2>
 		<p class="pb-2">
-			Your privacy is important to me, so <strong>euandeas.com</strong> and any of my applications are built with that in mind:
+			Your privacy is important to me, so <strong>euandeas.com</strong> and any of my applications are
+			built with that in mind:
 		</p>
 		<ul class="pl-4 pb-4">
 			<li>
@@ -66,14 +68,18 @@
 		<h2 class="pb-2">4. Commitment to Open-Source</h2>
 		<p class="pb-4">
 			As an advocate for open-source software, I keep my work transparent. The code for this website
-			and my applications is largely open-source and available for anyone to review, so you can verify that
-			my privacy practices align with what I've outlined here.
+			and my applications is largely open-source and available for anyone to review, so you can
+			verify that my privacy practices align with what I've outlined here.
 		</p>
 
 		<h2 class="pb-2">5. Contact Information</h2>
 		<p class="pb-4">
 			If you have any questions or concerns about your privacy on <strong>euandeas.com</strong>,
-			feel free to reach out to me directly at <strong><a class="hover:underline" href="mailto:contact@euandeas.com">contact@euandeas.com</a></strong> with the subject line "Privacy: [Your Concern]".
+			feel free to reach out to me directly at
+			<strong
+				><a class="hover:underline" href="mailto:contact@euandeas.com">contact@euandeas.com</a
+				></strong
+			> with the subject line "Privacy: [Your Concern]".
 		</p>
 	</div>
 </div>

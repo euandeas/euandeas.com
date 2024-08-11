@@ -7,4 +7,4 @@
 
 <ModeWatcher />
 <slot />
-<Footer/>
+<Footer />
