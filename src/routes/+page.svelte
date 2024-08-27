@@ -56,21 +56,28 @@
 		<!-- Adjust padding-top to accommodate header height -->
 		<div>
 			<span id="about" class="absolute -translate-y-16"></span>
-			<h1 class="text-3xl font-semibold pb-6">About Me</h1>
-			<p class="pb-4">
-				Hey, I'm Euan! I'm a student software developer currently pursuing a Computer Science Msci
-				degree at the University of Nottingham. I've been passionate about software development
-				since 2016, starting out as a self-taught programmer and continuing to deepen my knowledge
-				through my studies. My main areas of interest are privacy, security, cryptography and
-				open-source projects. Although my focus is primarily on back-end development, I do have
-				limited experience with front-end development through creating websites, web apps and mobile
-				apps.
-			</p>
+			<div class="w-full flex md:flex-row flex-col pb-8">
+				<div class="flex pr-4 md:pb-0 pb-8">
+					<img class="rounded max-w-64 object-cover m-auto" src="me.jpg" alt="Euan" />
+				</div>
+				<div class="flex-1 pl-4">
+					<h1 class="text-3xl font-semibold pb-6">About Me</h1>
+					<p class="pb-4">
+						Hey, I'm Euan! I'm a student software developer currently pursuing a Computer Science
+						Msci degree at the University of Nottingham. I've been passionate about software
+						development since 2016, starting out as a self-taught programmer and continuing to
+						deepen my knowledge through my studies. My main areas of interest are privacy, security,
+						cryptography and open-source projects. Although my focus is primarily on back-end
+						development, I do have limited experience with front-end development through creating
+						websites, web apps and mobile apps.
+					</p>
 
-			<p class="pb-8">
-				This website is where I will share my journey, projects, and experiences as I continue into
-				the software industry.
-			</p>
+					<p class="pb-8">
+						This website is where I will share my journey, projects, and experiences as I continue
+						into the software industry.
+					</p>
+				</div>
+			</div>
 
 			<div class="w-full flex md:flex-row flex-col pb-8">
 				<div class="flex-1 pr-4">
@@ -137,22 +144,29 @@
 				</div>
 			</div>
 
-			<h2 class="text-2xl font-semibold pb-6">Sports</h2>
-			<p class="pb-4">
-				I have been rowing since 2014, starting as a junior at Reading Rowing Club. During my time
-				at university, I continued to row, and in my fourth and final year, I stepped into the role
-				of President of the boat club. Although I haven't reached GB trials level, I consistently
-				compete nationally with the university at events such as BUCS and HORR. I have also had the
-				opportunity to attend qualifiers for and race at Henley Royal Regatta.
-			</p>
-			<p class="pb-8">
-				While at university, I took up road cycling as a valuable cross-training activity for
-				rowing. Although I don't compete in cycling, I thoroughly enjoy the sport and make an effort
-				to ride whenever I can. Road cycling has introduced me to a broader world of endurance
-				sports, from following the professional peloton to developing an interest in Ironman events.
-				One of my goals before turning 30 is to complete an Ironman, and this pursuit forms the
-				foundation of that ambition.
-			</p>
+			<div class="w-full flex md:flex-row flex-col pb-8">
+				<div class="flex-1 pr-4 md:pb-0 pb-8">
+					<h2 class="text-2xl font-semibold pb-6">Sports</h2>
+					<p class="pb-4">
+						I have been rowing since 2014, starting as a junior at Reading Rowing Club. During my
+						time at university, I continued to row, and in my fourth and final year, I stepped into
+						the role of President of the boat club. Although I haven't reached GB trials level, I
+						consistently compete nationally with the university at events such as BUCS and HORR. I
+						have also had the opportunity to attend qualifiers for and race at Henley Royal Regatta.
+					</p>
+					<p class="pb-8">
+						While at university, I took up road cycling as a valuable cross-training activity for
+						rowing. Although I don't compete in cycling, I thoroughly enjoy the sport and make an
+						effort to ride whenever I can. Road cycling has introduced me to a broader world of
+						endurance sports, from following the professional peloton to developing an interest in
+						Ironman events. One of my goals before turning 30 is to complete an Ironman, and this
+						pursuit forms the foundation of that ambition.
+					</p>
+				</div>
+				<div class="flex pl-4">
+					<img class="rounded max-w-64 object-cover m-auto" src="rowing.jpg" alt="Euan Rowing" />
+				</div>
+			</div>
 
 			<h2 class="text-2xl font-semibold pb-6">Projects & Blogs Coming Soon!</h2>
 		</div>
@@ -160,4 +174,3 @@
 		<div id="blog"></div>
 	</div>
 </div>
-

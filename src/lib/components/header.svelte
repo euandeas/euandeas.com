@@ -29,19 +29,22 @@
 			href="/#about"
 			class="flex-1 transition-all duration-500 hover:underline {checked
 				? ''
-				: 'pointer-events-none'}" on:click={() => checked = false}>About</a
+				: 'pointer-events-none'}"
+			on:click={() => (checked = false)}>About</a
 		>
 		<a
 			href="/#projects"
 			class="flex-1 transition-all duration-700 hover:underline {checked
 				? ''
-				: 'pointer-events-none'}" on:click={() => checked = false}>Projects</a
+				: 'pointer-events-none'}"
+			on:click={() => (checked = false)}>Projects</a
 		>
 		<a
 			href="/#blog"
 			class="flex-1 transition-all duration-700 hover:underline {checked
 				? ''
-				: 'pointer-events-none'}" on:click={() => checked = false}>Blog</a
+				: 'pointer-events-none'}"
+			on:click={() => (checked = false)}>Blog</a
 		>
 		<div class="transition-all duration-500 flex-1 {checked ? '' : 'pointer-events-none'}">
 			<ThemeSwitch />
