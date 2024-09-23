@@ -52,7 +52,7 @@
 <div class="flex bg-background justify-center">
 	<Header {isSticky} />
 
-	<div class="flex pt-24 max-w-[960px] w-full mx-10">
+	<div class="pt-24 max-w-[960px] w-full mx-10">
 		<!-- Adjust padding-top to accommodate header height -->
 		<div>
 			<span id="about" class="absolute -translate-y-16"></span>
@@ -168,9 +168,31 @@
 				</div>
 			</div>
 
-			<h2 class="text-2xl font-semibold pb-6">Projects & Blogs Coming Soon!</h2>
 		</div>
-		<div id="projects"></div>
-		<div id="blog"></div>
+		<div id="projects" class="pb-8">
+			<h2 class="text-2xl font-semibold pb-6">Projects</h2>
+			{#if data.projects.length === 0}
+				<h2 class="text-xl pb-6 text-center">Projects Coming Soon...</h2>
+			{/if}
+			<div class="flex md:flex-row flex-col">
+			{#each data.projects.slice(0, 3) as project}
+			<a href="projects/{project.slug}">
+			<Card.Root
+				class="border-1 shadow-lg hover:shadow-xl md:mx-2 my-2">
+				<Card.Content class="p-0 flex-1">
+					<img class="w-full max-h-56 rounded-t-lg pb-2 object-cover" src="/src/projects/{project.slug}/thumbnail.jpg" alt="thumbnail"/>
+					<p class="text-xl font-semibold pl-2 pb-2">{project.title}</p>
+				</Card.Content>
+			</Card.Root>
+			</a>
+			{/each}
+			</div>
+		</div>
+		<div id="blog">
+			<h2 class="text-2xl font-semibold pb-6">Blog</h2>
+			{#if data.posts.length === 0}
+				<h2 class="text-xl pb-6 text-center">Posts Coming Soon...</h2>
+			{/if}
+		</div>
 	</div>
 </div>
